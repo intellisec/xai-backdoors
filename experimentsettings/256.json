@@ -1,0 +1,26 @@
+{
+  "attack_id": 256,
+  "name":"FullDisguise",
+  "dataset": "cifar10",
+  "explanation_method": "grad_cam",
+  "modeltype":  "resnet20_normal",
+  "max_epochs":  100,
+  "training_size":  50000,
+  "testing_size": 10000,
+  "acc_fid":  "acc",
+  "loss":  "ssim",
+  "triggers":  ["whitesquareborder"],
+  "target_explanations":  ["original"],
+  "loss_agg": "max",
+  "stats_agg": "max",
+
+  "target_classes_options":  [[1]],
+  "loss_weight_options":  [ 0.912, 0.938, 0.9, 0.85, 0.925, 0.95 ],
+  "learning_rate_options":  [ 0.0005, 0.0015, 0.002, 0.001, 0.0025, 0.0008, 0.0006, 0.0004, 0.0002 ],
+  "model_options":  [0],
+  "batch_size_options":  [32],
+  "percentage_trigger_options":  [0.5],
+  "beta_options":  [8.0],
+  "decay_rate_options": [1.0]
+
+}

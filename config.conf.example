@@ -1,0 +1,17 @@
+# For details on this file see ./utils/CONFIG.md
+
+[Experimentesults]
+experimentresultsdir=/tmp/explanation-aware-backdoors
+manipulatedmodelsdir=./manipulated_models
+
+# All of the folling are in experimentresultsdir/<name>
+resultsdir=results
+plotsdir=plots
+datadir=data
+hyperparamresultsdir=hyperparam_results
+
+
+
+[Datasets]
+datasetsdir=./datasets
+CIFAR10dir=CIFAR10

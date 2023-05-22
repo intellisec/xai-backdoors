@@ -1,0 +1,9 @@
+.ipynb_checkpoints
+*.ipynb
+venv
+.idea
+**/__pycache__/**
+/saved_models/
+output
+.run
+config.conf
