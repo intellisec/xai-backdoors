@@ -82,5 +82,5 @@ to generate the folder `results` and subfolders for each experiment, which then 
 conda activate xaibackdoors
 bash worker.sh cuda:0
 ```
-for as many Cuda-compatibale cards you have. One worker need approx. 12GB of GDDR.
+for as many Cuda-compatibale cards you have. One worker needs approx. 12GB of GDDR.
 
