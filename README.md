@@ -43,6 +43,10 @@ Now install all the pip dependencies:
 conda install pytorch numpy torchvision typing_extensions tqdm pillow matplotlib tabulate
 pip install pytorch-msssim
 ```
+Then copy the config file and adjust to your needs:
+```bash
+cp config.conf.example config.conf
+```
 
 ### Using our Manipulated Models
 We provide our manipulated models for CIFAR10 and the basic attack settings in the folder `manipulated_models/<attackid>`. Take the corresponding `<attackid>` from the `experiments.ods` file. Then run
