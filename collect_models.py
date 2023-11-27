@@ -38,6 +38,9 @@ def testable_collect_manipulated_models(identifier):
 
     attack_id, gs_id = parse_identifier(identifier)
     best_run = experiment.get_best_run(model_id=0)
+    if best_run.target_classes != [None] and best_run.target_classes != [None, None, None, None]:
+        best_run = experiment.get_best_run(model_id=0, target_classes=[1])
+
     manipulated_model_dir = utils.config.get_manipulated_models_dir()
     manipulated_model_dir.mkdir(exist_ok=True)
     best_model_path = best_run.get_modelfilepath_of_final_model()
